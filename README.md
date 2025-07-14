@@ -1,4 +1,5 @@
-Client Website Mockup (Testing Only)
+**Client Website Mockup (Testing Only)**
+
 This repository contains a testing version of a website mockup created for a client. It includes layout experiments, styling tests, and early concept designs.
 
 ⚠️ Important: This is not the final or official website. This version was created for internal testing and client preview purposes only.
