@@ -3699,6 +3699,10 @@ blockquote {
     font-weight: 300;
 }
 
+.team-card {
+    height: 100%;
+}
+
 .team-card-image {
     color: var(--primary);
     object-fit: cover;
@@ -3718,6 +3722,7 @@ blockquote {
     border-radius: 20px;
     margin-top: 20px;
     padding: 30px 20px;
+    height: 100%;
 }
 
 .team-card-content-wrapper.speaker-four {
@@ -4840,7 +4845,7 @@ blockquote {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
     .brand img {
         height: 50px;
     }
@@ -5255,7 +5260,7 @@ blockquote {
     color: var(--primary-dark);
     margin-bottom: 20px;
     font-family: Outfit, sans-serif;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 500;
     display: inline-block;
 }
@@ -5310,8 +5315,22 @@ blockquote {
 .date-and-time-wrapp {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    flex-flow: wrap;
     display: flex;
+    align-items: center;
+    gap: 8px;
+    /* spacing between svg and text */
+}
+
+.date-and-time-wrapp svg {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    /* prevent it from shrinking */
+}
+
+.date-and-time-wrap p {
+    margin: 0;
+    /* override any default margin */
 }
 
 .events-grid {
@@ -5434,9 +5453,19 @@ blockquote {
 
 .footer-wrapp {
     justify-content: space-between;
-    align-items: flex-end;
+
     width: 100%;
     display: flex;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    /* spacing between image, text, and icons */
+    width: 30%;
+    /* match existing width */
 }
 
 .footer-social-icons-wrapp {
@@ -5491,6 +5520,7 @@ blockquote {
 }
 
 .circule {
+    padding: 15px;
     border-radius: 100%;
     justify-content: center;
     align-items: center;
@@ -5521,13 +5551,14 @@ blockquote {
 .form-subscribe {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    flex-flow: column;
     justify-content: center;
-    align-items: flex-end;
-    display: flex;
+    align-items: flex-start;
 }
 
 .form-subscribe-field-wrapper {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .subscribe-text-field {
@@ -5543,11 +5574,18 @@ blockquote {
 }
 
 .subscribe-subtitle {
-    margin-top: 20px;
+    margin-top: 80px;
     margin-bottom: 0;
     font-size: 12px;
     font-style: italic;
 }
+
+@media (max-width: 991px) {
+    .subscribe-subtitle {
+        margin-top: 20px;
+    }
+}
+
 
 .cta-info-all-center {
     z-index: 3;
@@ -6332,12 +6370,23 @@ blockquote {
     display: flex;
 }
 
-.event-schedule-image {
-    object-fit: cover;
-    object-position: 50% 0%;
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    /* prevents shrinking and keeps width stable */
+}
+
+.event-schedule-image {
+    width: 70%;
+    /* or a fixed size like 24px */
+    height: 70%;
+    object-fit: contain;
     display: block;
 }
 
@@ -6770,7 +6819,7 @@ blockquote {
 }
 
 .agenda-mini-bg-element {
-    background-color: var(--green);
+    background-color: var(--primary);
     border-radius: 100px;
     width: 200px;
     height: 110px;
@@ -6780,7 +6829,7 @@ blockquote {
 }
 
 .agenda-bg-element-side {
-    background-color: var(--yellow);
+    background-color: #ffa600;
     border-top-right-radius: 200px;
     border-bottom-right-radius: 200px;
     width: 16vw;
@@ -8651,9 +8700,7 @@ blockquote {
         background-image: linear-gradient(173.8deg, #fff 44%, #0000 44.5%);
     }
 
-    .footer-wrapp {
-        align-items: flex-end;
-    }
+
 
     .footer-social-icons-wrapp {
         justify-content: flex-start;
@@ -10673,10 +10720,17 @@ blockquote {
         justify-content: center;
     }
 
+    .footer-column {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
     .footer-social-icons-wrapp {
         justify-content: center;
         width: 100%;
         margin-top: 0;
+        margin-bottom: 20px;
     }
 
     .footer-bottom {
@@ -10817,10 +10871,10 @@ blockquote {
         height: 500px;
     }
 
-    .event-schedule-image {
+    /* .event-schedule-image {
         width: 50px;
         height: 50px;
-    }
+    } */
 
     .schedule-icon {
         width: 40px;
