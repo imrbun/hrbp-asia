@@ -2846,12 +2846,15 @@ blockquote {
 }
 
 .nav-link {
-    padding: 20px 15px;
-    font-size: 15px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+    /* optional for smooth effect */
 }
 
 .nav-link:hover {
     opacity: 1;
+    border-bottom: 3px solid var(--primary);
+    transform: translateY(1px);
 }
 
 .nav-link.w--current {
@@ -4511,12 +4514,10 @@ blockquote {
 
 .navbar-fixed {
     background-color: #fff0;
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
     position: fixed;
-    inset: 0% 0% auto;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .testimonials {
@@ -5773,12 +5774,9 @@ blockquote {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     background-color: #fffffff5;
-    border-radius: 20px;
+
     width: auto;
-    max-width: 1200px;
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
+
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -8626,9 +8624,7 @@ blockquote {
         max-width: 1430px;
     }
 
-    .navbar-fixed {
-        max-width: 1400px;
-    }
+
 
     .about-img._1 {
         width: 420px;
@@ -8784,9 +8780,9 @@ blockquote {
         height: 160px;
     }
 
-    .navbar-wrapper {
+    /* .navbar-wrapper {
         max-width: 1400px;
-    }
+    } */
 
     .cta-bg-element-position-one {
         width: 180px;
