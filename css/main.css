@@ -2192,7 +2192,8 @@ textarea.w-select {
 :root {
     --primary-dark: #1e1c1b;
     --paragraph-gray: #535353;
-    --primary: #ff6816;
+    --primary: #ffa600;
+    --secondary: #ff6816;
     --primary-light: #f7f4f2;
     --yellow: #ffc001;
     --white: white;
@@ -2737,6 +2738,32 @@ blockquote {
     font-weight: 300;
     transition: all .3s;
     display: inline-block;
+    font-weight: bold;
+}
+
+.tag-button {
+    border: 1px solid var(--primary);
+    color: #27333b;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    padding: 12px 26px;
+    font-family: Inter Tight, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    transition: all .3s;
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+
+}
+
+.tag-button:hover {
+    background-color: black;
+    border: 1px solid black;
+    color: var(--primary);
 }
 
 .primary-button:hover {
@@ -2829,15 +2856,20 @@ blockquote {
 }
 
 .nav-container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 100%;
+    max-width: 1340px;
+    /* Prevents it from expanding beyond 1140px */
+    width: 100%;
+    /* Allows it to shrink on smaller screens */
     margin-left: auto;
+    /* Centers the container horizontally */
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
 }
+
 
 .nav-menu {
     text-align: right;
@@ -5014,8 +5046,25 @@ blockquote {
 }
 
 .home-banner {
-    background-color: var(--primary-dark);
-    background-image: linear-gradient(#ff7e3e80, #fff0 44%);
+    background-color: #f7f7f7;
+    background-image:
+        linear-gradient(to bottom, transparent 0%, transparent 20%, #e9edee 60%),
+        /* top layer: full gradient */
+        url("../assets/images/map_dots_individual-min.webp"),
+        /* left image */
+        url("../assets/images/map_dots_individual-min.webp");
+    /* right image */
+
+    background-size: cover, 1456px 943px, 1456px 943px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position:
+        center,
+        /* gradient */
+        calc(50% - 1191px) -150px,
+        /* left image */
+        calc(50% + 1191px) -150px;
+    /* right image */
+
     flex-direction: column;
     justify-content: flex-end;
     padding-top: 180px;
@@ -5023,6 +5072,7 @@ blockquote {
     display: flex;
     position: relative;
 }
+
 
 .banner-event-item-image {
     border-radius: 10px;
@@ -5044,6 +5094,11 @@ blockquote {
 }
 
 .home-banner-heading {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 800;
+    font-size: 62px;
+    color: #27333b;
+    line-height: 1;
     max-width: 480px;
     margin-top: 0;
     margin-bottom: 20px;
@@ -5770,10 +5825,10 @@ blockquote {
 }
 
 .navbar-wrapper {
-    border: 1px solid var(--white);
+
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    background-color: #fffffff5;
+    background-color: #f7f7f7;
 
     width: auto;
 
@@ -9512,6 +9567,14 @@ blockquote {
     }
 
     .home-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://assets-us-01.kc-usercontent.com/469992e5-7cbd-0032-ead4-f2db9237053a/397927dc-edaf-4872-b5f7-72fe01b4092b/map_dots_individual-min.png?fm=webp&q=80);
+        background-size: 130%;
+        background-repeat: no-repeat;
+        background-position-y: 40%;
+        background-position-x: center;
         padding-top: 130px;
     }
 
@@ -10640,6 +10703,14 @@ blockquote {
     }
 
     .home-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://assets-us-01.kc-usercontent.com/469992e5-7cbd-0032-ead4-f2db9237053a/397927dc-edaf-4872-b5f7-72fe01b4092b/map_dots_individual-min.png?fm=webp&q=80);
+        background-size: 130%;
+        background-repeat: no-repeat;
+        background-position-y: 40%;
+        background-position-x: center;
         padding-top: 110px;
         padding-bottom: 60px;
     }
