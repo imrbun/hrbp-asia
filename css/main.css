@@ -5073,6 +5073,47 @@ blockquote {
     position: relative;
 }
 
+.middle-section {
+    padding-top: 150px !important;
+    padding-bottom: 150px !important;
+}
+
+.middle-section-banner {
+
+    background-color: #ffffff;
+    background-image:
+        linear-gradient(to bottom, transparent 0%, transparent 20%, #ffffff 100%),
+        /* top layer: full gradient */
+        url("../assets/images/map_dots_individual-min.webp"),
+        /* left image */
+        url("../assets/images/map_dots_individual-min.webp");
+    /* right image */
+
+    background-size: cover, 1456px 943px, 1456px 943px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position:
+        center,
+        /* gradient */
+        calc(50% - 1191px) -150px,
+        /* left image */
+        calc(50% + 1191px) -150px;
+    /* right image */
+
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    position: relative;
+}
+
+.middle-section-wrap {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
 .banner-event-item-image {
     border-radius: 10px;
@@ -5092,6 +5133,7 @@ blockquote {
     display: flex;
     box-shadow: 0 6px 20px #00000014;
 }
+
 
 .home-banner-heading {
     font-family: 'Tajawal', sans-serif;
@@ -5178,11 +5220,17 @@ blockquote {
 }
 
 .in-section-title {
+
     margin-top: 0;
     margin-bottom: 20px;
 }
 
 .in-section-title.two-side-style {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 800;
+    font-size: 62px;
+    color: #27333b;
+    line-height: 1;
     margin-bottom: 0;
 }
 
@@ -9576,6 +9624,23 @@ blockquote {
         background-position-y: 40%;
         background-position-x: center;
         padding-top: 130px;
+    }
+
+    .middle-section-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://assets-us-01.kc-usercontent.com/469992e5-7cbd-0032-ead4-f2db9237053a/397927dc-edaf-4872-b5f7-72fe01b4092b/map_dots_individual-min.png?fm=webp&q=80);
+        background-size: 130%;
+        background-repeat: no-repeat;
+        background-position-y: 40%;
+        background-position-x: center;
+
+    }
+
+    .middle-section {
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     .image-info-graphic-banner-item {
