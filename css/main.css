@@ -5414,8 +5414,8 @@ blockquote {
 }
 
 .event-tag-two {
-    border: 1px solid var(--white);
-    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    background-color: var(--light-gray);
     color: var(--primary-dark);
     border-radius: 50px;
     padding: 6px 12px;
