@@ -5138,12 +5138,18 @@ blockquote {
 
 .middle-gap {
     background-color: #e9edee;
-    height: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* optional: if you also want vertical centering */
 }
 
 @media (max-width: 991px) {
     .middle-gap {
-        height: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 }
 
