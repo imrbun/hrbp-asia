@@ -2506,8 +2506,8 @@ blockquote {
     max-width: 2000px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .laptop-banner {
