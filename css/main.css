@@ -5139,8 +5139,8 @@ blockquote {
 
     flex-direction: column;
     justify-content: flex-end;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 4px;
     display: flex;
     position: relative;
 }
