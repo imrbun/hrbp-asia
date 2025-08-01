@@ -5139,7 +5139,7 @@ blockquote {
 
     flex-direction: column;
     justify-content: flex-end;
-    padding-top: 180px;
+    padding-top: 80px;
     padding-bottom: 80px;
     display: flex;
     position: relative;
@@ -8640,10 +8640,6 @@ blockquote {
         width: 36%;
     }
 
-    .home-banner {
-        padding-top: 130px;
-        padding-bottom: 130px;
-    }
 
     .image-info-graphic-banner-item {
         padding-left: 20px;
@@ -9804,7 +9800,7 @@ blockquote {
         background-repeat: no-repeat;
         background-position-y: 40%;
         background-position-x: center;
-        padding-top: 130px;
+
     }
 
     .middle-section-banner {
@@ -10962,7 +10958,7 @@ blockquote {
         background-repeat: no-repeat;
         background-position-y: 40%;
         background-position-x: center;
-        padding-top: 110px;
+
         padding-bottom: 60px;
     }
 
