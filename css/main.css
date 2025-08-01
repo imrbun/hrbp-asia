@@ -2503,7 +2503,7 @@ blockquote {
 .base-container2 {
     flex-direction: column;
     align-items: center;
-    max-width: 2000px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 40px;
@@ -5058,7 +5058,7 @@ blockquote {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 75%;
+    width: 100%;
     display: flex;
     position: relative;
 }
@@ -5076,8 +5076,8 @@ blockquote {
 
 .home-banner-wrapper {
     z-index: 998;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     align-items: center;
     width: 100%;
     display: flex;
@@ -8914,7 +8914,7 @@ blockquote {
     }
 
     .home-banner-content {
-        width: 80%;
+        width: 100%;
     }
 
     .image-info-graphic-banner {
