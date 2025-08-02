@@ -179,54 +179,15 @@
     </section>
      -->
     <section class="section">
-        <div class="w-layout-blockcontainer base-container w-container">
+        <div class="w-layout-blockcontainer base-container w-container carousel-container">
+            <div id="tooltip" class="tooltip">
+                <span id="tooltip-text"></span>
+                <div class="tooltip-arrow"></div>
+            </div>
             <div href="#" class="cta-loop">
                 <div class="cta-loop-wrapper">
-                    <div class="cta-loop-item-wrapper">
-                        <img src="assets/images/logo/1 PETRONAS_Logo.png" alt="logo" />
-                        <img src="assets/images/logo/2 Prudential Singapore.png" alt="logo" />
-                        <img src="assets/images/logo/3 Malayan Banking Berhad.png" alt="logo" />
-                        <img src="assets/images/logo/4 PwC Singapore.png" alt="logo" />
-                        <img src="assets/images/logo/5 SD Guthrie Berhad.png" alt="logo" />
-                        <img src="assets/images/logo/6 nestle-logo.png" alt="logo" />
-                        <img src="assets/images/logo/7 bp-logo.png" alt="logo" />
-                        <img src="assets/images/logo/8 Government Technology Agency (GovTech).png" alt="logo" />
-                        <img src="assets/images/logo/9 HRD Corp.png" alt="logo" />
-                        <img src="assets/images/logo/10 netflix.png" alt="logo" />
-                        <img src="assets/images/logo/Abbott Laboratories.png" alt="logo" />
-                        <img src="assets/images/logo/Allianz.svg" alt="logo" />
-                        <img src="assets/images/logo/Asian Development Bank.png" alt="logo" />
-                        <img src="assets/images/logo/baker hughes.png" alt="logo" />
-                        <img src="assets/images/logo/Bangko Sentral ng Pilipinas.png" alt="logo" />
-                        <img src="assets/images/logo/Bank Negara Malaysia.png" alt="logo" />
-                        <img src="assets/images/logo/BPJS Ketenagakerjaan.png" alt="logo" />
-                        <img src="assets/images/logo/Brunei invesment.svg" alt="logo" />
-                        <img src="assets/images/logo/canva-logo.png" alt="logo" />
-                        <img src="assets/images/logo/CapitaLand Investment Limited.png" alt="logo" />
-                        <img src="assets/images/logo/CARITAS-HONG KONG.jpg" alt="logo" />
-                        <img src="assets/images/logo/Civil Service College.png" alt="logo" />
-                        <img src="assets/images/logo/Coherent Malaysia.png" alt="logo" />
-                        <img src="assets/images/logo/Deloitte_logo.png" alt="logo" />
-                        <img src="assets/images/logo/enterprise-sg.webp" alt="logo" />
-                        <img src="assets/images/logo/epf.png" alt="logo" />
-                        <img src="assets/images/logo/Heineken Malaysia Berhad.png" alt="logo" />
-                        <img src="assets/images/logo/Jerudong Park Medical Centre.svg" alt="logo" />
-                        <img src="assets/images/logo/JP Morgan Chase Bank.jpg" alt="logo" />
-                        <img src="assets/images/logo/JTI.svg" alt="logo" />
-                        <img src="assets/images/logo/Labuan Financial Services Authority.png" alt="logo" />
-                        <img src="assets/images/logo/Micron Semiconductor Asia Pte Ltd.png" alt="logo" />
-                        <img src="assets/images/logo/MUFG Bank (Malaysia) Berhad.png" alt="logo" />
-                        <img src="assets/images/logo/NagaWorld Limited.png" alt="logo" />
-                        <img src="assets/images/logo/National University Hospital.png" alt="logo" />
-                        <img src="assets/images/logo/PLUS_Expressways_Logo.svg.png" alt="logo" />
-                        <img src="assets/images/logo/PT Pelabuhan Indonesia (Persero).png" alt="logo" />
-                        <img src="assets/images/logo/SABIC.png" alt="logo" />
-                        <img src="assets/images/logo/Sarawak_Energy_logo.png" alt="logo" />
-                        <img src="assets/images/logo/standard-bank-logo.png" alt="logo" />
-                        <img src="assets/images/logo/Tenaga_Nasional.svg" alt="logo" />
-                        <img src="assets/images/logo/Tik Tok Pte Ltd.png" alt="logo" />
-                        <img src="assets/images/logo/tm_logo.svg" alt="logo" />
-                        <img src="assets/images/logo/Venetian Macau Ltd..png" alt="logo" />
+                    <div class="cta-loop-item-wrapper" id="logoContainer">
+
 
                     </div>
                 </div>
@@ -500,24 +461,33 @@
         </div>
     </section>
     <section class="section without-bottom-spacing" style="background-color:#e9edee">
-        <div data-w-id="a7f62a77-bd00-d682-5232-9f7c0a5c79b2" style="opacity:0" class="video-wrapper-full-width">
-
+        <div data-w-id="a7f62a77-bd00-d682-5232-9f7c0a5c79b2" style="opacity:0;cursor:pointer;"
+            class="video-wrapper-full-width" id="previewVideo">
             <video autoplay muted loop playsinline class="video-image-full-width-style">
-                <source src="assets/videos/home-middle.mp4" type="video/mp4">
+                <source
+                    src="https://overthink-images.sgp1.cdn.digitaloceanspaces.com/temp/ATDSEA%202025%20(230725)_Highlight.mp4"
+                    type="video/mp4">
             </video>
             <div class="video-overlay-full-width">
-
                 <div>
                     <h3 class="text-white in-section-title two-side-style" style="color: white !important;">Mark your
                         calendar for an extraordinary
                         experience<br /></h3>
-
                 </div>
             </div>
-
-
         </div>
     </section>
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <span class="video-close">&times;</span>
+            <video id="fullVideo" controls>
+                <source
+                    src="https://overthink-images.sgp1.cdn.digitaloceanspaces.com/temp/ATDSEA%202025%20(230725)_Highlight.mp4"
+                    type="video/mp4">
+            </video>
+        </div>
+    </div>
+
     <section class="section" style="background-color:#e9edee">
         <div class="w-layout-blockcontainer base-container w-container">
             <div data-w-id="4241fd77-1e1c-fec3-a60c-1284656dc50c" style="opacity:0"
@@ -916,3 +886,149 @@
 </body>
 
 </html>
+
+<script>
+    const companies = [
+        { name: 'PETRONAS', image: 'assets/images/logo/1 PETRONAS_Logo.png' },
+        { name: 'Prudential Singapore', image: 'assets/images/logo/2 Prudential Singapore.png' },
+        { name: 'Malayan Banking Berhad', image: 'assets/images/logo/3 Malayan Banking Berhad.png' },
+        { name: 'PwC Singapore', image: 'assets/images/logo/4 PwC Singapore.png' },
+        { name: 'SD Guthrie Berhad', image: 'assets/images/logo/5 SD Guthrie Berhad.png' },
+        { name: 'Nestle', image: 'assets/images/logo/6 nestle-logo.png' },
+        { name: 'BP', image: 'assets/images/logo/7 bp-logo.png' },
+        { name: 'Government Technology Agency (GovTech)', image: 'assets/images/logo/8 Government Technology Agency (GovTech).png' },
+        { name: 'HRD Corp', image: 'assets/images/logo/9 HRD Corp.png' },
+        { name: 'Netflix', image: 'assets/images/logo/10 netflix.png' },
+        { name: 'Abbott Laboratories', image: 'assets/images/logo/Abbott Laboratories.png' },
+        { name: 'Allianz', image: 'assets/images/logo/Allianz.svg' },
+        { name: 'Asian Development Bank', image: 'assets/images/logo/Asian Development Bank.png' },
+        { name: 'Baker Hughes', image: 'assets/images/logo/baker hughes.png' },
+        { name: 'Bangko Sentral ng Pilipinas', image: 'assets/images/logo/Bangko Sentral ng Pilipinas.png' },
+        { name: 'Bank Negara Malaysia', image: 'assets/images/logo/Bank Negara Malaysia.png' },
+        { name: 'BPJS Ketenagakerjaan', image: 'assets/images/logo/BPJS Ketenagakerjaan.png' },
+        { name: 'Brunei Investment', image: 'assets/images/logo/Brunei invesment.svg' },
+        { name: 'Canva', image: 'assets/images/logo/canva-logo.png' },
+        { name: 'CapitaLand Investment Limited', image: 'assets/images/logo/CapitaLand Investment Limited.png' },
+        { name: 'Caritas Hong Kong', image: 'assets/images/logo/CARITAS-HONG KONG.jpg' },
+        { name: 'Civil Service College', image: 'assets/images/logo/Civil Service College.png' },
+        { name: 'Coherent Malaysia', image: 'assets/images/logo/Coherent Malaysia.png' },
+        { name: 'Deloitte', image: 'assets/images/logo/Deloitte_logo.png' },
+        { name: 'Enterprise Singapore', image: 'assets/images/logo/enterprise-sg.webp' },
+        { name: 'EPF', image: 'assets/images/logo/epf.png' },
+        { name: 'Heineken Malaysia Berhad', image: 'assets/images/logo/Heineken Malaysia Berhad.png' },
+        { name: 'Jerudong Park Medical Centre', image: 'assets/images/logo/Jerudong Park Medical Centre.svg' },
+        { name: 'JP Morgan Chase Bank', image: 'assets/images/logo/JP Morgan Chase Bank.jpg' },
+        { name: 'JTI', image: 'assets/images/logo/JTI.svg' },
+        { name: 'Labuan Financial Services Authority', image: 'assets/images/logo/Labuan Financial Services Authority.png' },
+        { name: 'Micron Semiconductor Asia Pte Ltd', image: 'assets/images/logo/Micron Semiconductor Asia Pte Ltd.png' },
+        { name: 'MUFG Bank (Malaysia) Berhad', image: 'assets/images/logo/MUFG Bank (Malaysia) Berhad.png' },
+        { name: 'NagaWorld Limited', image: 'assets/images/logo/NagaWorld Limited.png' },
+        { name: 'National University Hospital', image: 'assets/images/logo/National University Hospital.png' },
+        { name: 'PLUS Expressways', image: 'assets/images/logo/PLUS_Expressways_Logo.svg.png' },
+        { name: 'PT Pelabuhan Indonesia (Persero)', image: 'assets/images/logo/PT Pelabuhan Indonesia (Persero).png' },
+        { name: 'SABIC', image: 'assets/images/logo/SABIC.png' },
+        { name: 'Sarawak Energy', image: 'assets/images/logo/Sarawak_Energy_logo.png' },
+        { name: 'Standard Bank', image: 'assets/images/logo/standard-bank-logo.png' },
+        { name: 'Tenaga Nasional', image: 'assets/images/logo/Tenaga_Nasional.svg' },
+        { name: 'TikTok Pte Ltd', image: 'assets/images/logo/Tik Tok Pte Ltd.png' },
+        { name: 'TM', image: 'assets/images/logo/tm_logo.svg' },
+        { name: 'Venetian Macau Ltd', image: 'assets/images/logo/Venetian Macau Ltd..png' }
+    ];
+
+
+    // DOM elements
+    const logoContainer = document.getElementById('logoContainer');
+    const tooltip = document.getElementById('tooltip');
+    const tooltipText = document.getElementById('tooltip-text');
+
+    // Create logo elements
+    function createLogos() {
+        // Double the array for seamless loop effect
+        const duplicatedCompanies = [...companies, ...companies];
+
+        duplicatedCompanies.forEach((company, index) => {
+            const logoItem = document.createElement('div');
+            logoItem.className = 'logo-item';
+
+            const img = document.createElement('img');
+            img.src = company.image;
+            img.alt = `${company.name} logo`;
+            img.dataset.companyName = company.name;
+
+            logoItem.appendChild(img);
+            logoContainer.appendChild(logoItem);
+
+            // Add event listeners
+            img.addEventListener('mouseenter', handleMouseEnter);
+            img.addEventListener('mouseleave', handleMouseLeave);
+            img.addEventListener('mousemove', handleMouseMove);
+        });
+    }
+
+    // Tooltip functions
+    function handleMouseEnter(event) {
+        const companyName = event.target.dataset.companyName;
+        const rect = event.target.getBoundingClientRect();
+        const containerRect = document.querySelector('.carousel-container').getBoundingClientRect();
+
+        tooltipText.textContent = companyName;
+
+        const x = rect.left - containerRect.left + rect.width / 2;
+        const y = rect.top - containerRect.top - 10;
+
+        tooltip.style.left = x + 'px';
+        tooltip.style.top = y + 'px';
+        tooltip.classList.add('visible');
+    }
+
+    function handleMouseLeave() {
+        tooltip.classList.remove('visible');
+    }
+
+    function handleMouseMove(event) {
+        if (tooltip.classList.contains('visible')) {
+            const rect = event.target.getBoundingClientRect();
+            const containerRect = document.querySelector('.carousel-container').getBoundingClientRect();
+
+            const x = rect.left - containerRect.left + rect.width / 2;
+            const y = rect.top - containerRect.top - 10;
+
+            tooltip.style.left = x + 'px';
+            tooltip.style.top = y + 'px';
+        }
+    }
+
+    // Initialize the carousel
+    document.addEventListener('DOMContentLoaded', function () {
+        createLogos();
+    });
+</script>
+<script>
+    const previewVideo = document.getElementById('previewVideo');
+    const modal = document.getElementById('videoModal');
+    const fullVideo = document.getElementById('fullVideo');
+    const closeBtn = document.querySelector('.video-close');
+
+    // ✅ When preview video clicked → show modal & play full video
+    previewVideo.addEventListener('click', () => {
+
+        modal.style.display = 'flex';
+        fullVideo.play();
+    });
+
+    // ✅ Close modal when clicking close button
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+        fullVideo.pause();
+        fullVideo.currentTime = 0; // reset video
+    });
+
+    // ✅ Optional: close when clicking outside video
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            fullVideo.pause();
+            fullVideo.currentTime = 0;
+        }
+    });
+</script>
