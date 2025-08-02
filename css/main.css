@@ -11060,7 +11060,7 @@ blockquote {
         background-repeat: no-repeat;
         background-position-y: 40%;
         background-position-x: center;
-
+        padding-top: 60px;
         padding-bottom: 60px;
     }
 
