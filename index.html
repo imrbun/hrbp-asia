@@ -122,7 +122,7 @@
                 </div>
                 <div class="home-banner-content">
                     <h1 data-w-id="8097b195-a8b0-e93e-13e9-aacfabd56c72" style="opacity:0; font-size: 62px;"
-                        class="home-banner-heading">
+                        class="home-banner-heading" id="banner-heading">
                         Empower HR professionals as business partner</h1>
                     <p data-w-id="8097b195-a8b0-e93e-13e9-aacfabd56c74" style="opacity:0"
                         class="home-banner-description">Our mission is to equip HR professionals with the knowledge and
@@ -151,33 +151,8 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="banner-bg-element"></div> -->
     </div>
-    <!-- <section class="section without-top-spacing">
-        <div class="w-layout-blockcontainer base-container w-container">
-            <div class="w-layout-grid career-customers-wrapper">
-                <div class="career-customer-item"><img
-                        src="https://cdn.prod.website-files.com/660165064b2c49caac692f3b/660165064b2c49caac692ff9_Fictional%20company%20logo-3.png"
-                        loading="lazy" alt="logo" class="logos" /></div>
-                <div class="career-customer-item"><img
-                        src="https://cdn.prod.website-files.com/660165064b2c49caac692f3b/660165064b2c49caac69300b_Fictional%20company%20logo-4.png"
-                        loading="lazy" alt="logo" class="logos" /></div>
-                <div class="career-customer-item"><img
-                        src="https://cdn.prod.website-files.com/660165064b2c49caac692f3b/660165064b2c49caac692fb0_logo-03.webp"
-                        loading="lazy" alt="logo" class="logos" /></div>
-                <div class="career-customer-item"><img
-                        src="https://cdn.prod.website-files.com/660165064b2c49caac692f3b/660165064b2c49caac693009_Fictional%20company%20logo-7.png"
-                        loading="lazy" alt="logo" class="logos" /></div>
-                <div class="career-customer-item"><img
-                        src="https://cdn.prod.website-files.com/660165064b2c49caac692f3b/660165064b2c49caac692fb5_logo-01.webp"
-                        loading="lazy" alt="logo" class="logos" /></div>
-                <div class="career-customer-item"><img
-                        src="https://cdn.prod.website-files.com/660165064b2c49caac692f3b/660165064b2c49caac69300a_Fictional%20company%20logo-1.png"
-                        loading="lazy" alt="logo" class="logos" /></div>
-            </div>
-        </div>
-    </section>
-     -->
+
     <section class="section">
         <div class="w-layout-blockcontainer base-container w-container carousel-container">
             <div id="tooltip" class="tooltip">
@@ -1010,26 +985,60 @@
     const fullVideo = document.getElementById('fullVideo');
     const closeBtn = document.querySelector('.video-close');
 
-    // ✅ When preview video clicked → show modal & play full video
+
     previewVideo.addEventListener('click', () => {
 
         modal.style.display = 'flex';
         fullVideo.play();
     });
 
-    // ✅ Close modal when clicking close button
+
     closeBtn.addEventListener('click', () => {
         modal.style.display = 'none';
         fullVideo.pause();
         fullVideo.currentTime = 0; // reset video
     });
 
-    // ✅ Optional: close when clicking outside video
+
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.style.display = 'none';
             fullVideo.pause();
             fullVideo.currentTime = 0;
         }
+    });
+
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const heading = document.getElementById("banner-heading");
+        const texts = [
+            "Empower HR professionals as business partner",
+            "Driving Business Impact Through HR Excellence"
+        ];
+        let index = 0;
+
+
+        heading.style.opacity = 1;
+        heading.style.transition = "none";
+
+        setTimeout(() => {
+            heading.style.transition = "opacity 1s ease-in-out";
+
+            setInterval(() => {
+
+                heading.style.opacity = 0;
+
+                setTimeout(() => {
+
+                    index = (index + 1) % texts.length;
+                    heading.textContent = texts[index];
+
+
+                    heading.style.opacity = 1;
+                }, 1000);
+            }, 5000);
+        }, 100);
     });
 </script>
