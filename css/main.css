@@ -5061,6 +5061,7 @@ blockquote {
     width: 100%;
     display: flex;
     position: relative;
+
 }
 
 .image-info-graphic-banner {
@@ -8593,6 +8594,9 @@ blockquote {
 
 @media screen and (min-width: 1280px) {
 
+    .home-banner-content {
+        padding-top: 80px;
+    }
 
     h1 {
         font-size: 55px;
@@ -9902,7 +9906,7 @@ blockquote {
         background-repeat: no-repeat;
         background-position-y: 40%;
         background-position-x: center;
-
+        padding-top: 100px;
     }
 
     .middle-section-banner {
