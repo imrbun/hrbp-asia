@@ -241,7 +241,7 @@ th {
 
 .w-icon-arrow-down:before,
 .w-icon-dropdown-toggle:before {
-    content: "î˜ƒ";
+    content: "";
 }
 
 .w-icon-file-upload-remove:before {
@@ -4601,6 +4601,16 @@ blockquote {
     left: 0;
 }
 
+.navbar-fixed-float {
+    background-color: #fff0;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    inset: 0% 0% auto;
+}
+
 .testimonials {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -6084,6 +6094,21 @@ blockquote {
 
     width: auto;
 
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-wrapper-float {
+    border: 1px solid var(--white);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: #fffffff5;
+    border-radius: 20px;
+    width: auto;
+    max-width: 1200px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
